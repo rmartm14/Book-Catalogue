@@ -2,12 +2,14 @@
 
 namespace App\Models;
 
-class book {
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
+class Book extends Model
+{
+    use HasFactory;
+    protected $table = "books";
     protected $fillable = [
-        'name',
-        'author',
-        'photo',
-        'year'
+        'name', 'ISBN', 'year', 'author'
     ];
 }

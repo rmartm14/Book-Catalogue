@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LibrosController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,21 +18,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello', function () {
-    return view('helloworld', [
-    	'mes' => $mes,
-    	'ano' => $ano,
-    	'eventos' => $eventos
-]);
-});
-
-Route::get('/testIdLibro/{id}', [LibrosController::class, 'seeLibroFromId']);
-
 Route::get("/nombres/{nombre}", function ($nombre) {
     return "Hola $nombre";
 });
 
-
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('book', 'BookController');
+
+Route::get("/catalogue", [App\Http\Controllers\BookController::class, 'index']);
+
+Route::post("/newBook", [App\Http\Controllers\BookController::class, 'store']);
+
+Route::delete("/deleteBook/{id}", [App\Http\Controllers\BookController::class, 'delete']);
+
+Route::resource('User', 'UserController');
+
+Route::get("/users", [App\Http\Controllers\UserController::class, 'index']);
+
+Route::delete("/deleteBook/{id}", [App\Http\Controllers\UserController::class, 'delete']);
