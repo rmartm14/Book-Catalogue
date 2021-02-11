@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get("/nombres/{nombre}", function ($nombre) {
     return "Hola $nombre";
@@ -24,11 +22,12 @@ Route::get("/nombres/{nombre}", function ($nombre) {
 
 Auth::routes();
 
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('book', 'BookController');
 
-Route::get("/catalogue", [App\Http\Controllers\BookController::class, 'index']);
+Route::get("/catalogue", [App\Http\Controllers\BookController::class, 'index'])->name('home');
 
 Route::post("/newBook", [App\Http\Controllers\BookController::class, 'store']);
 
