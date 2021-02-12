@@ -62,7 +62,7 @@
                             </li>
                             <li class="nav-item">
                             
-                            <a class="nav-link btn btn-outline-danger" href="{{ route('logout') }}"
+                            <a class="nav-link btn btn-outline-danger " href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
@@ -73,7 +73,7 @@
                                     </form>
                             </li>
                             <li class="nav-item">
-                                <a class=" nav-link btn btn-outline-success " href="./catalogue" role="button">Catalogue</a>
+                                <a class=" nav-link btn btn-outline-success ml-2" href="./catalogue" role="button">Catalogue</a>
                             </li>
                             <li class="nav-item">
                                 <a class=" nav-link btn btn-outline-primary ml-2" href="./users" role="button">User List</a>

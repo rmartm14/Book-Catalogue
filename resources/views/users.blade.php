@@ -31,7 +31,7 @@
                     </td>
 
                     <td>
-                    <form action="{{ url('deleteBook/'.$b->id) }}" method="POST">
+                    <form action="{{ url('deleteUser/'.$b->id) }}" method="POST">
                         {{ csrf_field() }}
                         {{ method_field('DELETE') }}
                         <input type="hidden" name="_method" value="DELETE">

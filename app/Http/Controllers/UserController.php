@@ -25,7 +25,7 @@ class UserController extends Controller
 
     public function delete($id)
     {
-        book::destroy($id);
+        User::destroy($id);
         return redirect('users');
 
         

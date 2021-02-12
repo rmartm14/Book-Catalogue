@@ -2,6 +2,8 @@
 
 @section('content')
 <div class="container">
+    <a class="btn btn-primary mb-1" href="/create/book"> Add new Book </a>
+
     <table class="table table-striped ">
     <thead>
             <th>id</th>
@@ -29,6 +31,9 @@
                     <td class="table-text">
                         <div>{{ $b->year }}</div>
                     </td>
+
+                    <td>
+                    <a class="btn btn-success" href="{{ url('edit/book/'.$b->id) }}" > Edit </a>
 
                     <td>
                     <form action="{{ url('deleteBook/'.$b->id) }}" method="POST">

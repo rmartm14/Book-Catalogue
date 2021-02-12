@@ -12,8 +12,33 @@ class BookController extends Controller
     {
         $book = new book;
         $book->create($request->all());
-        return redirect('book');
+        return redirect('catalogue');
     
+    }
+
+    public function edit($id) {
+        $book = book::find($id);
+        return view('editBook', [
+            'book' => $book
+        ]);
+    }
+
+    public function update(Request $request, $id){
+        //Encontrar el libro por su id
+        $book = book::find($id);
+        
+        $book->name   = $request->name;
+        $book->author = $request->author;
+        $book->ISBN   = $request->ISBN;
+        $book->year   = $request->year;
+
+        $book->save();
+
+        return redirect('catalogue');
+    }
+
+    public function newBook(){
+        return view('newBook');
     }
 
     public function index(){

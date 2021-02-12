@@ -29,6 +29,12 @@ Route::resource('book', 'BookController');
 
 Route::get("/catalogue", [App\Http\Controllers\BookController::class, 'index'])->name('home');
 
+Route::get("create/book", [App\Http\Controllers\BookController::class, 'newBook']);
+
+Route::get("/edit/book/{id}", [App\Http\Controllers\BookController::class, 'edit']);
+
+Route::post("/edit/book/{id}", [App\Http\Controllers\BookController::class, 'update']);
+
 Route::post("/newBook", [App\Http\Controllers\BookController::class, 'store']);
 
 Route::delete("/deleteBook/{id}", [App\Http\Controllers\BookController::class, 'delete']);
@@ -37,4 +43,6 @@ Route::resource('User', 'UserController');
 
 Route::get("/users", [App\Http\Controllers\UserController::class, 'index']);
 
-Route::delete("/deleteBook/{id}", [App\Http\Controllers\UserController::class, 'delete']);
+
+
+Route::delete("/deleteUser/{id}", [App\Http\Controllers\UserController::class, 'delete']);
