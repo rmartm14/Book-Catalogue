@@ -33,8 +33,8 @@
                     </td>
 
                     <td>
-                    <a class="btn btn-success" href="{{ url('edit/book/'.$b->id) }}" > Edit </a>
-
+                    <a class="btn btn-success" href="{{ url('edit/book/'.$b->id) }}" ><i class="fa fa-pencil"></i> Edit </a>
+                    </td>
                     <td>
                     <form action="{{ url('deleteBook/'.$b->id) }}" method="POST">
                         {{ csrf_field() }}

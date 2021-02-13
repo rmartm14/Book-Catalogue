@@ -43,6 +43,6 @@ Route::resource('User', 'UserController');
 
 Route::get("/users", [App\Http\Controllers\UserController::class, 'index']);
 
-
+Route::get("{name}", [App\Http\Controllers\UserController::class, 'infoUser']);
 
 Route::delete("/deleteUser/{id}", [App\Http\Controllers\UserController::class, 'delete']);
