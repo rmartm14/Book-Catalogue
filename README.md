@@ -8,4 +8,8 @@
 </p>
 
 <p> <b> Capturas de la aplicación </b> </p>
-<a href="https://ibb.co/qYBQ5gp"><img src="https://i.ibb.co/qYBQ5gp/catalogue.png" alt="catalogue" border="0"></a> <a href="https://ibb.co/xSV8dct"><img src="https://i.ibb.co/xSV8dct/edit-new.png" alt="edit-new" border="0"></a> <a href="https://ibb.co/RDsFM7j"><img src="https://i.ibb.co/RDsFM7j/main.png" alt="main" border="0"></a> <a href="https://ibb.co/Kb3Xdxj"><img src="https://i.ibb.co/Kb3Xdxj/userInfo.png" alt="userInfo" border="0"></a> <a href="https://ibb.co/fFbxhT1"><img src="https://i.ibb.co/fFbxhT1/userlist.png" alt="userlist" border="0"></a>
+<a href="https://ibb.co/qYBQ5gp"><img src="https://i.ibb.co/60YCBtF/catalogue.png" alt="catalogue" border="0"></a>
+<a href="https://ibb.co/xSV8dct"><img src="https://i.ibb.co/RpL4dMk/edit-new.png" alt="edit-new" border="0"></a>
+<a href="https://ibb.co/RDsFM7j"><img src="https://i.ibb.co/71ZfTbk/main.png" alt="main" border="0"></a>
+<a href="https://ibb.co/Kb3Xdxj"><img src="https://i.ibb.co/VJPtRYW/userInfo.png" alt="userInfo" border="0"></a>
+<a href="https://ibb.co/fFbxhT1"><img src="https://i.ibb.co/GpX5Krx/userlist.png" alt="userlist" border="0"></a>
